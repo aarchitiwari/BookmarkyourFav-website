@@ -1,0 +1,457 @@
+* {
+    /* padding-left: 10px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#head {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 90px;
+    background-color: plum;
+    z-index: 999;
+    position: static;
+
+}
+
+.icon .navicon {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-size: 40px;
+}
+
+.icon .navname {
+    position: relative;
+    left: 120px;
+    top: -10px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: relative;
+    top: 25px;
+    left: 1000px;
+}
+
+#navbar ul li a {
+    padding: 0 30px 0 30px;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(67, 50, 146);
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(20, 12, 66);
+    text-decoration: underline;
+}
+
+#aboutbutton {
+    height: 400px;
+    width: 500px;
+    /* border: 2px solid; */
+    position: relative;
+    left: 1200px;
+    top: 200px
+}
+
+#aboutbutton .about {
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    margin: auto;
+    height: 250px;
+    width: 450px;
+}
+
+.but {
+    height: 70px;
+    width: 150px;
+    border: 1px solid rgb(67, 50, 146);
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: plum;
+    box-shadow: 6px 6px 20px rgb(197, 188, 188);
+}
+
+.first {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+}
+
+.second {
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+}
+
+.stacked-left {
+    height: 50vh;
+    width: 700px;
+    /* border: 2px solid; */
+    position: relative;
+    left: 100px;
+    top: -150px;
+    display: flex;
+    justify-content: center;
+    /* width: 100%;
+    height: 300vh;
+    position: relative;
+    display: flex;
+    justify-content: center; */
+}
+
+.stacked-cards {
+    /* border: 2px solid; */
+    height: 450px;
+    width: 600px;
+    margin: auto;
+}
+
+.stack-card {
+    height: 400px;
+    width: 500px;
+    border-radius: 30px;
+    /* margin: 20px auto auto auto; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transition: 0.5s ease-in-out;
+}
+
+.stack-card:nth-child(1) {
+    background-color: cadetblue;
+    z-index: 5;
+}
+
+.stack-card:nth-child(2) {
+    background-color: rgb(104, 30, 30);
+    z-index: 4;
+}
+
+.stack-card:nth-child(3) {
+    background-color: rgb(101, 54, 155);
+    z-index: 3;
+}
+
+.stack-card:nth-child(4) {
+    background-color: rgb(136, 43, 113);
+    z-index: 2;
+}
+
+.stack-card:nth-child(5) {
+    background-color: rgb(174, 187, 56);
+    z-index: 1;
+}
+
+.sub {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    font-size: 50px;
+}
+
+.stack-content {
+    height: 200px;
+    width: 450px;
+    font-size: 50px;
+    line-height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+
+.stack-card.active {
+    transform-origin: bottom left;
+}
+
+#process {
+    position: relative;
+    top: 100px;
+    /* border: 1px solid; */
+    margin: auto;
+    width: 550px;
+}
+
+#process input {
+    height: 50px;
+    width: 400px;
+    border: 3px solid plum;
+    border-radius: 10px;
+}
+
+#process input::placeholder {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#process .save {
+    position: absolute;
+    top: 2px;
+    left: 410px;
+    height: 47px;
+    width: 100px;
+    border: 1px solid rgb(67, 50, 146);
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: plum;
+    box-shadow: 6px 6px 20px rgb(197, 188, 188);
+}
+
+#footer {
+    background-color: rgb(7, 7, 65);
+    height: 400px;
+    color: white;
+    position: relative;
+    top: 0;
+}
+
+#footer .left {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .right {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    left: 1600px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#footer .center {
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    left: 810px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid white; */
+}
+
+#footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.iconsfoot {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid; */
+}
+
+.iconsfoot a {
+    font-size: 25px;
+}
+
+.iconsfoot a:hover {
+    font-size: 20px;
+    transform: rotate(-30deg);
+    transition: 0.5s;
+}
+
+.left .mark {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.left .mark i,
+h4 {
+    font-size: 20px;
+}
+
+.but:hover,
+#process .save:hover {
+    box-shadow: none;
+}
+
+h3 {
+    font-size: 25px;
+    margin-left: 750px;
+    margin-top: 70px;
+    color: rgb(67, 50, 146);
+}
+
+.add {
+    height: 350px;
+    width: 300px;
+    border: 2px solid rgb(67, 50, 146);
+    box-shadow: 5px 5px 50px rgb(240, 231, 231);
+    border-radius: 25px;
+    position: relative;
+    margin: 50px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.add img {
+    height: 200px;
+    width: 297px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.link {
+    height: 50px;
+    width: 250px;
+    /* border: 1px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-left: 20px;
+    overflow: hidden;
+    /* Hide the overflow */
+    white-space: nowrap;
+    /* Prevent line breaks within the link */
+    text-overflow: ellipsis;
+}
+
+.add a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(67, 50, 146);
+    margin: auto;
+}
+
+.add button {
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    border: 1px solid rgb(67, 50, 146);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(243, 196, 243);
+    box-shadow: 6px 6px 20px rgb(230, 218, 218);
+}
+
+.container {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-about{
+    height: 200px;
+    width: 600px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.logo-about .logo img{
+    height: 350px;
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.logo-about .all-about{
+    height: 350px;
+    width: 1100px;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    /* border: 1px solid; */
+}
+.all-about h5{
+    font-size: 25px;
+    font-weight: 30;
+    /* line-height: 4px; */
+}
+
+#footer_saved {
+    background-color: rgb(7, 7, 65);
+    height: 400px;
+    color: white;
+    position: relative;
+    top: 410px;
+}
+
+#footer_saved .left {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer_saved .right {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    left: 1600px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#footer_saved .center {
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    left: 810px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid white; */
+}
+
+#footer_saved a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#footer-about {
+    background-color: rgb(7, 7, 65);
+    height: 400px;
+    color: white;
+    position: relative;
+    top: 600px;
+}
